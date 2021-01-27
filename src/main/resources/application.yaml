@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: ENC(3QmwM7trmeBXEJYKzie06rgFpjnaUz1GIGIC5jXV3ki6ib66K65fpsaC+qSHxd8tqYLXckOR/gKVdVEiQ7HfDQ==)
+    username: ENC(oqUil9Z5+8oQ9Q4cqN0LXspEwJ0P8ja4EshUwjavyP4=)
+    password:
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+
+    properties:
+      hibernate:
+        format_sql: true
+
+
+logging:
+  level:
+    org.hibernate.SQL: DEBUG
+
+jasypt:
+  encryptor:
+    bean: jasyptStringEncryptor
